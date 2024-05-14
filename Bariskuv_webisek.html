@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web 1920 – 1</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Bariskuv_webisek.css"/>
+<script id="applicationScript" type="text/javascript" src="Bariskuv_webisek.js"></script>
+</head>
+<body>
+<div id="Web_1920__1">
+	<div id="MENU">
+		<div class="container">
+			<div id="LOGO" class="LOGO" onmouseover="basicHover('LOGO')" onclick="showAllItems(); changePrimaryColor()">
+				<svg class="Path_3" viewBox="49.451 42.808 103.171 103.327">
+					<path id="Path_3" d="M 152.5449981689453 94.83599853515625 C 152.7129974365234 108.1080017089844 148.9120025634766 118.8560028076172 140.6679992675781 127.8929977416992 C 134.9839935302734 134.1230010986328 127.8899993896484 138.3639984130859 120.2190017700195 141.6880035400391 C 112.1190032958984 145.197998046875 103.7789993286133 147.0859985351562 94.875 145.6519927978516 C 91.83200073242188 145.1620025634766 88.69000244140625 145.3029937744141 85.64299774169922 144.8339996337891 C 76.68900299072266 143.4570007324219 69.5469970703125 138.9579925537109 64.11799621582031 131.7510070800781 C 57.29800033569336 122.697998046875 52.94800186157227 112.4800033569336 50.34299850463867 101.5199966430664 C 49.11999893188477 96.37699890136719 49.33300018310547 91.11599731445312 49.92200088500977 85.86499786376953 C 50.73500061035156 78.62999725341797 52.52199935913086 71.697998046875 55.84600067138672 65.19200134277344 C 60.67900085449219 55.73199844360352 68.42800140380859 49.81900024414062 78.35900115966797 46.45100021362305 C 85.80500030517578 43.92599868774414 93.44100189208984 42.75199890136719 101.2770004272461 42.81000137329102 C 117.2119979858398 42.92800140380859 129.8320007324219 49.65399932861328 139.4660034179688 62.18399810791016 C 144.3480072021484 68.53500366210938 147.8910064697266 75.63400268554688 150.6699981689453 83.11799621582031 C 152.1999969482422 87.23600006103516 152.8589935302734 91.50700378417969 152.5449981689453 94.83599853515625">
+					</path>
+				</svg>
+				<div id="BIBLE">
+					<span>BIBLE</span>
+				</div>
+				<div id="minis-logo">
+					<span>minis </span>
+				</div>
+			</div>
+			<div class="categories">
+				<ul>
+					<li id="TSHIRT" onmouseover="basicHover('TSHIRT')" onclick="filterItems('TSHIRT')"><a>TSHIRT</a></li>
+					<li id="JUMPER" onmouseover="basicHover('JUMPER')" onclick="filterItems('JUMPER')"><a>JUMPER</a></li>
+					<li id="SOCKS_el" onmouseover="basicHover('SOCKS_el')" onclick="filterItems('SOCKS')"><a>SOCKS</a></li>
+					<li id="MUGS" onmouseover="basicHover('MUGS')" onclick="filterItems('MUGS')"><a>MUGS</a></li>
+					<li id="MINIS" onmouseover="basicHover('MINIS')" onclick="filterItems('MINIS')"><a>MINIS</a></li>
+				</ul>
+			</div>
+			<div id="BASKET" class="BASKET" onclick="toggleRight()">
+				<span id="backet-count" class="backet-count"></span>
+				<div id="basket-icon"  onmouseover="basicHover('basket-icon', null, 'scale(1.05)')">
+					<svg class="Path_2" viewBox="0 0 40 40">
+						<path class="basket" d="M76.92,48.13c1.08,5.68,1.99,28.85-15.27,30.71-15.43,1.66-44.23,2-52.06-3.58C1.77,69.67-.76,62.36.19,49.84c.51-6.7.76-12.81,6.79-14.13,4.07-.89,14.26,2.83,28.07,2.87,12.23.04,24.81-3.11,29.96-2.72,10.96.83,11.31,9.08,11.91,12.26Z"/>
+						<path class="basket" d="M58.5,39.23c2.36-4.31,2.75-13.89,2.45-16.89-.27-7.88-11.01-15.53-20.19-14.76-16.62.08-32.48,3.69-26,28.78,1.68,6.48.91,9.29-2.06,3.66C3.99,22.31,9.22,7.43,26.18,1.9c12.64-3.24,30.07-2.58,36.61,3.77,6.54,6.35,6.13,13.76,3.71,26.33-2.25,11.7-8.88,8.75-8.01,7.22Z"/>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="BASKET_ey">
+		<svg class="Rectangle_27">
+			<rect id="Rectangle_27" rx="45" ry="45" x="0" y="0" width="1001" height="900">
+			</rect>
+		</svg>
+		<div id="Component_29__2" class="Component_29___2" onclick="toggleRight(); buy()"  onmouseover="basicHover('Component_29__2')" >
+			<svg class="Path_7" viewBox="0.315 -1.868 777.695 155.889">
+				<path id="Path_7" d="M 759.9111938476562 130.0151214599609 C 742.40625 140.9425201416016 717.2864990234375 147.2343597412109 649.6713256835938 150.0766754150391 C 577.0247192382812 153.1302642822266 493.4400329589844 155.2784271240234 419.1598815917969 153.1912689208984 C 357.3740539550781 151.4550018310547 239.6172790527344 152.3524627685547 214.1350250244141 151.7256011962891 C 139.2674102783203 149.8833618164062 88.86956787109375 152.5710754394531 43.4739875793457 142.9313507080078 C -13.5491247177124 130.8229370117188 3.135542869567871 77.78809356689453 1.095213770866394 39.48068618774414 C -0.1959035843610764 15.23980617523193 16.72292518615723 6.780470371246338 99.76583862304688 2.276542186737061 C 162.0308380126953 -1.100653171539307 436.9126586914062 3.113343000411987 502.2007751464844 0.9148667454719543 C 632.5955810546875 -3.476087331771851 741.6810913085938 -7.778473854064941 768.4977416992188 30.90153884887695 C 782.23876953125 57.14142608642578 782.5057983398438 115.9104843139648 759.9111938476562 130.0151214599609">
+				</path>
+			</svg>
+			<div id="BUY_ME_FOR_A_KISS">
+				<span>BUY ME FOR A KISS</span>
+			</div>
+		</div>
+		<div id="STAF" onmouseover="colorHover('STAF')"  onmouseout="resetColor('STAF')">
+			<span>STUFF</span>
+		</div>
+		<div id="STAF_e" onmouseover="colorHover('STAF_e')" onmouseout="resetColor('STAF_e')">
+			<span>STUFF</span>
+		</div>
+		<div id="STAF_fa" onmouseover="colorHover('STAF_fa')" onmouseout="resetColor('STAF_fa')">
+			<span>STUFF</span>
+		</div>
+		<div id="STAF_fb" onmouseover="colorHover('STAF_fb')" onmouseout="resetColor('STAF_fb')">
+			<span>STUFF</span>
+		</div>
+		<div id="STAF_fc" onmouseover="colorHover('STAF_fc')" onmouseout="resetColor('STAF_fc')">
+			<span>STUFF</span>
+		</div>
+		<svg class="Line_1" viewBox="0 0 1017 20">
+			<path id="Line_1" d="M 0 0 L 1017 0">
+			</path>
+		</svg>
+		<div id="BASKET_fa">
+			<span>BASKET</span>
+		</div>
+	</div>
+	<div id="ITEMS_CONTAINER">
+		<div id="scarf" class="item" onmouseover="basicHover('scarf')" data-category="MINIS" onclick="itemClick('scarf'); flipCard('scarf')" >
+			<div class="ITEMS">
+				<div id="belive" class="item-txt-div">
+					<img id="Grousp_8_s" src="SVG/item.svg" class="white_item">
+					<div id="scarf_k" class="item-title">
+						<span>scarf</span>
+					</div>
+					<div id="n_1" class="item-price">
+						<span></span><span>11$</span>
+					</div>
+				</div>
+				<img id="daughter" src="Galery/daughter.png" srcset="Galery/daughter.pGalery/daughter@2x.png@2x.png 2x">
+				<div id="scarf_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="uni_tshirt" class="item" onmouseover="basicHover('uni_tshirt', 'faith-fear_front')" data-category="TSHIRT" onclick="itemClick('uni_tshirt'); flipCard('uni_tshirt')">
+			<div class="ITEMS">
+				<div id="belive_q" class="item-txt-div">
+					<img id="Group_8_s" src="SVG/item.svg" class="white_item">
+					<div id="uni_tshirt_s" class="item-title">
+						<span>uni tshirt</span>
+					</div>
+					<div id="n_0" class="item-price">
+						<span></span><span>20$</span>
+					</div>
+				</div>
+				<img id="faith-fear_back" src="Galery/faith-fear_back.png" srcset="Galery/faith-fear_back.pGalery/faith-fear_back@2x.png@2x.png 2x">
+				<img id="faith-fear_front" src="Galery/faith-fear_front.png" srcset="Galery/faith-fear_front.png 1x, Galery/faith-fear_front@2x.png 2x">
+				<div id="uni_tshirt_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="socks" class="item" onmouseover="basicHover('socks')" data-category="SOCKS" onclick="itemClick('socks'); flipCard('socks')" >
+			<div class="ITEMS">
+				<div id="belive_z" class="item-txt-div">
+					<img id="Group_8_" src="SVG/item.svg" class="white_item">
+					<div id="socks_" class="item-title">
+						<span>socks</span>
+					</div>
+					<div id="n_" class="item-price">
+						<span></span><span>7$</span>
+					</div>
+				</div>
+				<img id="jesus" src="Galery/jesus.png" srcset="Galery/jesus.pGalery/jesus@2x.png@2x.png 2x">
+				<div id="socks_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="tshirt_U" class="item" onmouseover="basicHover('tshirt_U', 'dope_front')" data-category="TSHIRT" onclick="itemClick('tshirt_U'); flipCard('tshirt_U')" >
+			<div class="ITEMS">
+				<div id="belive_" class="item-txt-div">
+					<img id="Group_8_ba" src="SVG/item.svg" class="white_item">
+					<div id="tshirt_U_" class="item-title">
+						<span>tshirt U</span>
+					</div>
+					<div id="n_5" class="item-price">
+						<span></span><span>25$</span>
+					</div>
+				</div>
+				<img id="dope_back" src="Galery/dope_back.png" srcset="Galery/dope_back.png 1x, Galery/dope_back@2x.png 2x">
+				<img id="dope_front" src="Galery/dope_front.png" srcset="Galery/dope_front.png 1x, Galery/dope_front@2x.png 2x">
+				<div id="tshirt_U_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="tight_tshirt" class="item" onmouseover="basicHover('tight_tshirt', 'forgiven_front')" data-category="TSHIRT" onclick="itemClick('tight_tshirt'); flipCard('tight_tshirt')" >
+			<div class="ITEMS">
+				<div id="belive_c" class="item-txt-div">
+					<img id="Group_8_c" src="SVG/item.svg" class="white_item">
+					<div id="tight_tshirt_c" class="item-title">
+						<span>tight tshirt</span>
+					</div>
+					<div id="n_4_c" class="item-price">
+						<span></span><span>34$</span>
+					</div>
+				</div>
+				<img id="forgiven_back" src="Galery/forgiven_back.png" srcset="Galery/forgiven_back.png 1x, Galery/forgiven_back@2x.png 2x">
+				<img id="forgiven_front" src="Galery/forgiven_front.png" srcset="Galery/forgiven_front.png 1x, Galery/forgiven_front@2x.png 2x">
+				<div id="tight_tshirt_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="top" class="item" onmouseover="basicHover('top', 'favorite_front')" data-category="TSHIRT" onclick="itemClick('top'); flipCard('top')"  >
+			<div class="ITEMS">
+				<div id="belive_co" class="item-txt-div">
+					<img id="Group_8_cp" src="SVG/item.svg" class="white_item">
+
+					</svg>
+					<div id="top_cq" class="item-title">
+						<span>top</span>
+					</div>
+					<div id="n_0_cr" class="item-price">
+						<span></span><span>20$</span>
+					</div>
+				</div>
+				<img id="favorite_back" src="Galery/favorite_back.png" srcset="Galery/favorite_back.png 1x, Galery/favorite_back@2x.png 2x">
+				<img id="favorite_front" src="Galery/favorite_front.png" srcset="Galery/favorite_front.png 1x, Galery/favorite_front@2x.png 2x">
+				<div id="top_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="bag" class="item" onmouseover="basicHover('bag', 'hope_front')" data-category="MINIS" onclick="itemClick('bag'); flipCard('bag')" >
+			<div class="ITEMS">
+				<div id="belive_bx" class="item-txt-div">
+					<img id="Group_8_by" src="SVG/item.svg" class="white_item">
+
+					</svg>
+					<div id="bag_bz" class="item-title">
+						<span>bag</span>
+					</div>
+					<div id="n__b" class="item-price">
+						<span></span><span>9$</span>
+					</div>
+				</div>
+				<img id="hope_back" src="Galery/hope_back.png" srcset="Galery/hope_back.png 1x, Galery/hope_back@2x.png 2x">
+				<img id="hope_front" src="Galery/hope_front.png" srcset="Galery/hope_front.pGalery/hope_front@2x.png@2x.png 2x">
+				<div id="bag_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="blue_jumper" class="item" onmouseover="basicHover('blue_jumper', 'heart_front')" data-category="JUMPER" onclick="itemClick('blue_jumper'); flipCard('blue_jumper')" >
+			<div class="ITEMS">
+				<div id="belive_bg" class="item-txt-div">
+					<img id="Group_8_bh" src="SVG/item.svg" class="white_item">
+					<div id="blue_jumper_bi" class="item-title">
+						<span style="font-size: 70px">blue jumper</span>
+					</div>
+					<div id="n_0_bj" class="item-price">
+						<span></span><span>60$</span>
+					</div>
+				</div>
+				<img id="heart_back" src="Galery/heart_back.png" srcset="Galery/heart_back.png 1x, Galery/heart_back@2x.png 2x">
+				<img id="heart_front" src="Galery/heart_front.png" srcset="Galery/heart_front.png 1x, Galery/heart_front@2x.png 2x">
+				<div id="blue_jumper_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="panties" class="item_wide2" onmouseover="basicHover('panties', 'touch_front_orez')" data-category="MINIS" onclick="flipCard('panties'); notAvaliable()" >
+			<div class="ITEMS">
+				<div id="belive_do"  class="item-txt-div">
+					<img id="Group_8s_xc" src="SVG/item.svg" class="white_item_wide2">
+					<div class="item-txt-div_wide-2">
+						<div id="panties_dq" class="item-title">
+							<span>panties</span>
+						</div>
+						<div id="n_49" class="item-price">
+							<span></span><span>249$</span>
+						</div>
+					</div>
+				</div>
+				<img id="touch_back_orez" src="Galery/touch_back_orez.png" srcset="Galery/touch_back_orez.pGalery/touch_back_orez@2x.png@2x.png 2x">
+				<img id="touch_front_orez" src="Galery/touch_front_orez.png" srcset="Galery/touch_front_orez.pGalery/touch_front_orez@2x.png@2x.png 2x">
+				<div class="not_avaliable_div">
+					<span class="only_today">ONLY TODAY</span>
+					<span class="not_avaliable">not avaliable</span>
+				</div>
+				<div id="panties_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item_wide2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="pink_jumper" class="item" onmouseover="basicHover('pink_jumper', 'king_front')" data-category="JUMPER" onclick="itemClick('pink_jumper'); flipCard('pink_jumper')">
+			<div class="ITEMS">
+				<div id="belive_b" class="item-txt-div">
+					<img id="Group_8_b" src="SVG/item.svg" class="white_item">
+
+					</svg>
+					<div id="pink_jumper_b" class="item-title">
+						<span style="font-size: 70px">pink jumper</span>
+					</div>
+					<div id="n_5_b" class="item-price">
+						<span></span><span>55$</span>
+					</div>
+				</div>
+				<img id="king_back" src="Galery/king_back.png" srcset="Galery/king_back.png 1x, Galery/king_back@2x.png 2x">
+				<img id="king_front" src="Galery/king_front.png" srcset="Galery/king_front.pGalery/king_front@2x.png@2x.png 2x">
+				<div id="pink_jumper_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="blessed" class="item_heigh2" onmouseover="basicHover('blessed')" data-category="MINIS" onclick="itemClick('blessed'); flipCard('blessed')">
+			<div class="ITEMS">
+				<div id="belive_bp" class="item-txt-div">
+					<img id="Group_8_bq" src="SVG/item.svg" class="white_item_heigh2">
+					<div class="item-txt-div_heigh-2">
+						<div id="legins" class="item-title">
+							<span>legins</span>
+						</div>
+						<div id="n_4"  class="item-price">
+							<span>34$</span>
+						</div>
+					</div>
+				</div>
+				<img id="blessed_orez" src="Galery/blessed_orez.png" srcset="Galery/blessed_orez.pGalery/blessed_orez@2x.png@2x.png 2x">
+				<div id="blessed_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item_heigh2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill"  d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="jacket" class="item" onmouseover="basicHover('jacket', 'belive_front')" data-category="JUMPER" onclick="itemClick('jacket'); flipCard('jacket')">
+			<div class="ITEMS">
+				<div id="belive_df" class="item-txt-div">
+					<img id="Group_8_xc" src="SVG/item.svg" class="white_item">
+					<div id="jacket_dh" class="item-title">
+						<span>jacket</span>
+					</div>
+					<div id="n_3_di" class="item-price">
+						<span></span><span>73$</span>
+					</div>
+				</div>
+				<img id="belive_back" src="Galery/belive_back.png" srcset="Galery/belive_back.pGalery/belive_back@2x.png@2x.png 2x">
+				<img id="belive_front" src="Galery/belive_front.png" srcset="Galery/belive_front.png 1x, Galery/belive_front@2x.png 2x">
+				<div id="jacket_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill" d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="love_mug" class="item" onmouseover="basicHover('love_mug'); ksHover()" data-category="MUGS" onclick="itemClick('love_mug'); flipCard('love_mug')">
+			<div class="ITEMS">
+				<div id="belive_cx" class="item-txt-div">
+					<img id="Grousp_sa8_s" src="SVG/item.svg" class="white_item">
+					<div id="love_mug_cz" class="item-title">
+						<span>love mug</span>
+					</div>
+					<div id="n_9"  class="item-price">
+						<span></span><span>29$</span>
+					</div>
+					<div id="n_ks" class="item-ks">
+						<span></span><span>2ks</span>
+					</div>
+				</div>
+				<img id="love" src="Galery/love.png" srcset="Galery/love.pGalery/love@2x.png@2x.png 2x">
+				<div id="love_mug_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill" d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="T-shirt" class="item" onmouseover="basicHover('T-shirt', 'worship_front')" data-category="TSHIRT" onclick="itemClick('T-shirt'); flipCard('T-shirt')">
+			<div lass="ITEMS">
+				<div id="belive_cf" class="item-txt-div">
+					<img id="Group_8_cg" src="SVG/item.svg" class="white_item">
+
+					</svg>
+					<div id="T-shirt_ch" class="item-title">
+						<span>T-shirt</span>
+					</div>
+					<div id="n_3" class="item-price">
+						<span></span><span>23$</span>
+					</div>
+				</div>
+				<img id="worship_back" src="Galery/worship_back.png" srcset="Galery/worship_back.png 1x, Galery/worship_back@2x.png 2x">
+				<img id="worship_front" class="worship_front" src="Galery/worship_front.png" srcset="Galery/worship_front.png 1x, Galery/worship_front@2x.png 2x">
+				<div id="T-shirt_pexesso" class="item-pexesso-div">
+					<svg class="pexesso_item" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 368.7 462.4">
+						<path class="pexesso_fill" d="M364.7,390.4c-8.4,32.8-20.5,51.7-52.9,60.2-34.9,9.2-75,15.6-110.6,9.3-29.7-5.2-86.2-2.5-98.4-4.4-35.9-5.5-60.1,2.5-81.9-26.4C-6.5,392.8,10.4,208.5.5,118.7-2.7,89.7,8,20.6,47.9,7.1c29.9-10.1,161.8,2.5,193.2-4.1,62.6-13.2,128.6,16.5,121.2,101.4-1.5,17.6,13.3,243.6,2.5,286Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="INFO-div">
+
+		<div id="INFO" onmouseover="basicHover('INFO')"  onclick="togglePadding()" >
+			<svg class="info-circle" viewBox="0 0 50 50">
+				<path id="info-circle" d="M48,24.2c0,6.2-1.7,11.2-5.5,15.4-2.6,2.9-6,4.9-9.5,6.4-3.8,1.6-7.7,2.5-11.8,1.8-1.4-.2-2.9-.2-4.3-.4-4.2-.6-7.5-2.7-10-6.1-3.2-4.2-5.2-9-6.4-14.1-.6-2.4-.5-4.8-.2-7.3.4-3.4,1.2-6.6,2.8-9.6C5.2,6,8.8,3.3,13.5,1.7,16.9.5,20.5,0,24.2,0c7.4,0,13.3,3.2,17.8,9,2.3,3,3.9,6.3,5.2,9.8.7,1.9,1,3.9.9,5.5Z"/>
+			</svg>
+			<div id="INFO_d">
+				<span>INFO</span>
+			</div>
+		</div>
+		<svg class="Rectangle_26">
+			<rect id="Rectangle_26" rx="0" ry="0" x="0" y="0" width="100%" height="251">
+			</rect>
+		</svg>
+		<div class="info-container">
+			<span id="TERMS_AND_CONDITIONS" onmouseover="basicHover('TERMS_AND_CONDITIONS')" >TERMS AND CONDITIONS</span>
+			<span id="QA" onmouseover="basicHover('QA')">Q&A</span>
+			<span id="SHIPPING" onmouseover="basicHover('SHIPPING')">SHIPPING</span>
+			<span id="CONTACTS" onmouseover="basicHover('CONTACTS')">CONTACTS</span>
+		</div>
+	</div>
+</div>
+<script src="items.js"></script>
+</body>
+
+
+</html>
