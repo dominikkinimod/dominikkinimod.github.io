@@ -209,7 +209,7 @@ function shuffle(array) {
     return array;
 }
 
-//shuffle(items_ID);
+shuffle(items_ID);
 
 var currentCardIndex = 0; // Index aktuální karty
 
