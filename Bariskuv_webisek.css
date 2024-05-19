@@ -47,9 +47,12 @@
 }
 
 #ITEMS_CONTAINER {
+	max-width: 1920px;
+	left: 0;
+	right: 0;
+	margin: auto;
 	height: content-box;
 	margin-top: 220px;
-	margin-left: 50px;
 	margin-bottom: -100px;
 	display: grid;
 	grid-template-columns: repeat(4, calc((100% - 230px) / 4));
@@ -57,6 +60,7 @@
 	grid-auto-flow: dense;
 	/* Nastavení explicitní výšky řádků na větší hodnotu */
 	grid-auto-rows: 490px; /* Změňte tuto hodnotu na požadovanou maximální výšku prvku */
+	transform: translateX(50px);
 }
 
 .item {
@@ -851,7 +855,26 @@
 
 }
 
-.info-container{
+#TERMS_AND_CONDITIONS,
+#QA,
+#SHIPPING,
+#CONTACTS {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+	font-family: BubbleMint;
+	font-style: normal;
+	font-weight: normal;
+	font-size: min(8vw, 80px); /* Set font size relative to viewport width, but not exceeding 80px */
+	color: var(--primar-color);
+	z-index: 9999;
+	cursor: pointer;
+	user-select: none;
+	margin: 1vw; /* Set margin relative to viewport width */
+}
+
+.info-container {
 	position: relative;
 	width: max-content;
 	height: auto;
@@ -861,25 +884,25 @@
 	user-select: none;
 }
 
-#TERMS_AND_CONDITIONS,
-#QA,
-#SHIPPING,
-#CONTACTS {
-	position: relative;
-	display: inline-block;
-	margin-right: 40px;
-	margin-left: 40px;
-	margin-top: 40px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: BubbleMint;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 80px;
-	color: var(--primar-color);
-	z-index: 9999;
-	cursor: pointer;
-	user-select: none;
+/* Optionally, you can add media queries for fine-tuning on smaller screens */
+@media screen and (max-width: 768px) {
+	#TERMS_AND_CONDITIONS,
+	#QA,
+	#SHIPPING,
+	#CONTACTS {
+		font-size: min(6vw, 50px); /* Adjust font size for smaller screens, but not exceeding 50px */
+		margin: 2vw; /* Adjust margin for smaller screens */
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#TERMS_AND_CONDITIONS,
+	#QA,
+	#SHIPPING,
+	#CONTACTS {
+		font-size: min(8vw, 40px); /* Further adjust font size for even smaller screens, but not exceeding 40px */
+		margin: 3vw; /* Further adjust margin for even smaller screens */
+	}
 }
 
 
