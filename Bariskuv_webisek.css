@@ -48,6 +48,7 @@
 
 #ITEMS_CONTAINER {
 	max-width: 1920px;
+	min-height: 500px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -1277,6 +1278,24 @@
 @media screen and (max-width: 1314px) {
 	#ITEMS_CONTAINER {
 		grid-template-columns: repeat(2, calc((100% - 150px) / 2)); /* Pokud je šířka obrazovky menší než 768px, použij 2 sloupce */
+	}
+}
+
+/* Zrušit styly pro mobilní zařízení */
+@media only screen and (max-width: 768px) {
+	body {
+		transform: scale(1); /* Například nepřizpůsobení velikosti */
+		overflow: auto;
+	}
+
+	/* Změňte nebo zrušte další specifické mobilní styly */
+	.mobile-specific-class {
+		display: none;
+	}
+
+	/* Zobrazte desktopové styly na mobilu */
+	.desktop-specific-class {
+		display: block;
 	}
 }
 

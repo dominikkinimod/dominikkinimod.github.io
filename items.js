@@ -38,6 +38,23 @@ document.documentElement.style.setProperty('--primar-color', 'rgba(150, 210, 216
 
 var hoverTimeouts = {};
 
+
+var playPexesso = true;
+for (var i = 0; i < items_ID.length; i++) {
+    var cardId = items_ID[i];
+    var card = document.getElementById(cardId);
+    if (card) { // Ujistěte se, že prvek existuje
+        var pexessoDiv = card.querySelector('.item-pexesso-div');
+        if (pexessoDiv) { // Ujistěte se, že pexessoDiv existuje
+            card.classList.add('flipped');
+            setTimeout(function(pexessoDiv) {
+                pexessoDiv.style.display = 'none';
+            }.bind(null, pexessoDiv), 170);
+        }
+    }
+    pexessoDone = true;
+}
+
 function colorHover(itemDiv) {
     var itemsElement = document.getElementById(itemDiv);
 
@@ -68,8 +85,8 @@ function itemClick(itemDiv){
         var itemsElement = document.getElementById(itemDiv);
         var basketCount = document.getElementById('backet-count');
 
-
-        itemsElement.style.visibility = 'hidden';
+        itemsElement.remove();
+        //itemsElement.style.visibility = 'hidden';
 
         // Zvýšení počtu v košíku o jedna
         var currentCount = parseInt(basketCount.innerText); // Získání aktuálního počtu a převedení na číslo
@@ -231,10 +248,10 @@ function flipCard(cardId) {
             if (currentCardIndex === items_ID.length) {
                 pexessoDone = true;
 
-                /*
-                currentCardIndex = 0; // Resetovat index pro další hru
-                items_ID = shuffle(items_ID); // Zamíchat karty pro další hru
-                 */
+
+                //currentCardIndex = 0; // Resetovat index pro další hru
+                //items_ID = shuffle(items_ID); // Zamíchat karty pro další hru
+
             }
         } else {
             // Uživatel klikl na špatné ID, zpětně otočit všechny karty
@@ -285,6 +302,18 @@ function notAvaliable () {
     }
 }
 
+function flipCard(cardId) {
+    if (!pexessoDone){
+        var card = document.getElementById(cardId);
+        var pexessoDiv = card.querySelector('.item-pexesso-div');
+
+        card.classList.add('flipped');
+        setTimeout(function() {
+            pexessoDiv.style.display = 'none';
+        }, 170);
+        pexessoDone = true;
+    }
+}
 
 
 function flipCardSimple(cardId) {

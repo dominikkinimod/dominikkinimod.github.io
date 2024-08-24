@@ -9,6 +9,10 @@
 
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
 
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+	document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=1200');
+}
+
 var Application = function() {
 	// event constants
 	this.prefix = "--web-";
