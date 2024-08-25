@@ -1280,7 +1280,7 @@
 		grid-template-columns: repeat(2, calc((100% - 150px) / 2)); /* Pokud je šířka obrazovky menší než 768px, použij 2 sloupce */
 	}
 	.categories ul li a {
-		font-size: 40px;
+		font-size: 55px;
 	}
 }
 
