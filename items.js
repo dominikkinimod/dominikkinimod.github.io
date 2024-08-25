@@ -40,20 +40,28 @@ var hoverTimeouts = {};
 
 
 var playPexesso = true;
-for (var i = 0; i < items_ID.length; i++) {
-    var cardId = items_ID[i];
-    var card = document.getElementById(cardId);
-    if (card) { // Ujistěte se, že prvek existuje
-        var pexessoDiv = card.querySelector('.item-pexesso-div');
-        if (pexessoDiv) { // Ujistěte se, že pexessoDiv existuje
-            card.classList.add('flipped');
-            setTimeout(function(pexessoDiv) {
-                pexessoDiv.style.display = 'none';
-            }.bind(null, pexessoDiv), 170);
-        }
+if (playPexesso) {
+    for (var i = 0; i < items_ID.length; i++) { // Začneme od prvního pexesa
+        (function(i) {
+            var cardId = items_ID[i];
+            var card = document.getElementById(cardId);
+            if (card) { // Ujistěte se, že prvek existuje
+                var pexessoDiv = card.querySelector('.item-pexesso-div');
+                if (pexessoDiv) { // Ujistěte se, že pexessoDiv existuje
+                    setTimeout(function() {
+                        card.classList.add('flipped');
+                        setTimeout(function() {
+                            pexessoDiv.style.display = 'none';
+                        }, 170); // Zpoždění pro skrytí pexessa
+                    }, i * 200); // Zpoždění pro otočení každé karty
+                }
+            }
+        })(i);
     }
     pexessoDone = true;
 }
+
+
 
 function colorHover(itemDiv) {
     var itemsElement = document.getElementById(itemDiv);
